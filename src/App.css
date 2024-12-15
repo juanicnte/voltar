@@ -1,0 +1,231 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+  box-sizing: border-box;
+}
+
+#Main-Content {
+  height: 100vh;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+  /* Sin subrayado */
+}
+
+a:hover {
+  text-decoration: underline;
+  /* Subrayado al pasar el mouse */
+}
+
+ul,
+ol {
+  list-style: none;
+  /* Elimina los puntos de las listas */
+}
+
+body {
+  /* background-color: #eeeeee; */
+  font-family: 'Montserrat', sans-serif;
+  overflow-x: hidden;
+}
+
+img,
+svg {
+  vertical-align: middle;
+}
+
+:root {
+  --blue: rgb(64 97 112);
+  --yellow: rgb(235 178 89);
+  --green: rgb(102 120 72);
+  --red: rgb(176 80 68);
+  --sky-blue: rgb(141 174 167);
+  --brown: rgb(183 120 85);
+  --light-brown: rgb(197 170 153);
+  --white: #e0e0e0;
+}
+
+
+.title-and-ig {
+  margin-top: 1rem;
+}
+
+.title-and-subT {
+  margin: 0 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.title-and-subT h1 {
+  font-size: 1.5rem;
+  color: var(--yellow);
+}
+
+.title-and-subT p {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.collage-ig {
+  margin: 2rem 0;
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+.collage-ig img {
+  width: 8rem;
+  height: 9rem;
+  object-fit: cover;
+  filter: drop-shadow(2px 3px 3px #353535);
+}
+
+.img-ig-container {
+
+  z-index: 0;
+}
+
+.collage-ig h3 {
+  font-size: 25px;
+  text-align: center;
+  font-family: "EB Garamond", sans-serif;
+  font-style: italic;
+  color: var(--grey-color);
+  opacity: 0.8;
+}
+
+.start-now-action {
+  width: 80%;
+  height: 3rem;
+  font-size: 1rem;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  margin-top: 1rem;
+  background-color: var(--yellow);
+  color: #fff;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.start-now-action:hover {
+  box-shadow: 1px 1px 3px #000000;
+}
+
+.start-now-action svg {
+  position: absolute;
+  left: 3rem;
+  top: 35%;
+}
+
+.aboutUs-home {
+  margin: 0 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.aboutUs-home h2 {
+  font-size: 1.5rem;
+  font-family: 'EB Garamond', sans-serif;
+  font-style: italic;
+  margin-bottom: 1rem;
+  color: var(--yellow)
+    /* text-align: center; */
+}
+
+.aboutUs-home p {
+  font-size: 1rem;
+  color: #353535;
+}
+
+.aboutUs-home span {
+  font-size: 1rem;
+  margin-top: 1rem;
+  font-weight: 600;
+  color: #353535;
+  /* text-align: center; */
+}
+
+/* CARRUSEL CSS */
+
+.carousel {
+  height: 17rem;
+  margin-top: 3rem;
+}
+
+.flickity-viewport {
+  height: 100% !important;
+}
+
+.gallery-cell {
+  height: 100%;
+  width: 100%;
+}
+
+.gallery-cell img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.flickity-page-dots {
+  position: absolute !important;
+  bottom: 1rem !important;
+}
+
+.flickity-page-dot.is-selected {
+  background: hsl(0deg 0% 100%) !important;
+}
+
+
+.ventajas-container {
+  display: flex;
+  flex-direction: column;
+  padding: 0 1rem;
+  align-items: center;
+  height: 100%;
+  justify-content: center;
+  background-color: var(--yellow);
+}
+
+.ventajas-container svg {
+  height: 3rem;
+  width: 3rem;
+  color: #fff;
+}
+
+.ventajas-container h3 {
+  margin-top: 1rem;
+  font-size: 1.5rem;
+  text-align: center;
+  color: #fff;
+}
+
+.ventajas-container p {
+  margin-top: 0.5rem;
+  text-align: center;
+  font-weight: 500;
+  color: #fff;
+}
+
+/* MAPA */
+.leaflet-container {
+  box-shadow: 0px 0px 5px #353535;
+  height: 28rem;
+  width: 95%;
+  /* filter: grayscale(1); */
+  margin: 4rem auto;
+  position: relative;
+  z-index: 0;
+}
