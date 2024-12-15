@@ -230,6 +230,22 @@ svg {
   z-index: 0;
 }
 
-.leaflet-control-attribution a{
+.leaflet-control-attribution a {
   display: none !important;
+}
+
+/* scroll to top */
+
+.scrollToTop {
+  position: fixed;
+  right: 15px;
+  bottom: 5px;
+  padding: .5rem;
+  background-color: rgba(0, 0, 0, .2);
+}
+
+.scrollToTop svg {
+  width: 1.5rem;
+  height: 1.5rem;
+  color: #fff;
 }

@@ -139,7 +139,7 @@ header.active #btn .btn-content {
     top: 0vh;
     left: -40rem;
     width: 90vw;
-    max-height: 100vh;
+    height: 100vh;
     /* Inicialmente colapsado */
     padding-bottom: 0;
     display: flex;
@@ -158,7 +158,7 @@ header.active #btn .btn-content {
 #mobile-nav.active {
     transition: all 0.5s ease-in-out;
     left: 0;
-    height: 100vh;
+    /* height: 100vh; */
     opacity: 1;
     overflow: auto;
 }
@@ -254,29 +254,13 @@ header.active #btn .btn-content {
     padding: 3rem 0;
 }
 
-.list-hotels-nav {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 1.5rem;
-    margin-bottom: 3rem;
-}
-
-.list-hotels-nav a {
-    font-family: "EB Garamond", sans-serif;
-    font-style: italic;
-    font-size: 2.5rem;
-    color: var(--grey-color);
-}
 
 .list-idk-nav {
     display: flex;
     flex-direction: column;
-    /* gap: 1.3rem; */
-    margin-top: 3rem;
     margin-left: 2rem;
     font-size: 1.3rem;
-    color: var(--grey-color);
+    color: #353535;
 }
 
 .list-idk-nav li {
@@ -290,7 +274,7 @@ header.active #btn .btn-content {
 .list-idk-nav li::after {
     content: " ";
     width: 80%;
-    border: 1px solid #cecece;
+    border-bottom: 1px solid #cecece;
 }
 
 .list-socials-nav {
@@ -322,7 +306,7 @@ header.active #btn .btn-content {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: #ffffff13;
+    background: rgba(255,255,255,.15);
 }
 
 .list-socials-nav-footer svg {
@@ -360,6 +344,7 @@ header.active #btn .btn-content {
 .footer-content {
     width: 80%;
     margin: auto;
+    padding: 3rem 0;
 }
 
 .footer-options-items1 {
@@ -411,10 +396,8 @@ footer {
 }
 
 .footer-image {
-    margin-top: 1rem;
     width: 7rem;
     display: flex;
-    padding-top: 3rem;
 }
 
 .footer-image img {

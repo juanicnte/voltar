@@ -1,9 +1,11 @@
 .hotels-main {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     margin-top: 3rem;
+    flex-wrap: wrap;
+    gap: 1rem;
 }
 
 .inConstruction-timer-container {
@@ -43,4 +45,48 @@
     font-style: italic;
     color: #353535;
     opacity: 0.8;
+}
+
+.data-item {
+    width: 45vw;
+    height: 15rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    border: 2px solid #ebebeb;
+}
+
+.data-item img {
+    width: 100%;
+    height: 8rem;
+    object-fit: cover;
+    border-bottom: 2px solid #afafaf;
+}
+
+.data-item h4 {
+    align-content: center;
+    text-align: center;
+    color: #353535;
+    font-size: 1rem;
+    margin-top: 0.3rem
+}
+
+.data-item p {
+    display: none;
+    font-size: 12px;
+    text-align: center;
+    margin-top: 0.5rem;
+    padding: 0 .3rem;
+    font-weight: 500;
+    color: #353535;
+}
+
+.data-item a {
+    width: 100%;
+    text-align: center;
+    background: var(--yellow);
+    padding: 1rem;
+    color: #fff;
+    font-weight: 600;
 }

@@ -7,7 +7,7 @@ function Footer() {
             <footer>
                 <section className="footer-content">
                     <article className="footer-options">
-                        <a href="/" className='footer-image'>
+                        <a href="#" className='footer-image'>
                             <img src="/voltar_white.png" alt="" />
                         </a>
                         <ul className='list-socials-nav-footer'>

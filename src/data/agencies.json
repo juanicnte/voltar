@@ -1,0 +1,32 @@
+[
+    {
+        "id": 1,
+        "nombre": "Red Turistica",
+        "ubicacion": {
+          "ciudad": "Iguazu, Misiones",
+          "pais": "Argentina",
+          "direccion": "Av. Kukulcan 123, Zona Hotelera"
+        },
+        "descripcion": "La Reserva Virgin Lodge fue construida cuidadosamente preservando el medio ambiente.",
+        "imagen": "https://rturistica.com/images/clientes/thumb/red-arg.jpg",
+        "amenidades": ["WiFi", "Piscina", "Spa", "Restaurante", "Gimnasio"],
+        "rating": 5,
+        "precioPorNoche": 250,
+        "disponibilidad": true
+      },
+      {
+        "id": 2,
+        "nombre": "Empresa Nose",
+        "ubicacion": {
+          "ciudad": "Posadas, Misiones",
+          "pais": "Argentina",
+          "direccion": "Av. Kukulcan 123, Zona Hotelera"
+        },
+        "descripcion": "El Hotel Zarek combina comodidad y estilo en el corazón de Posadas, respetando su entorno natural.",
+        "imagen": "https://bonzoestudio.com/wp-content/uploads/2019/07/logo-turismo-toledo-1.jpg",
+        "amenidades": ["WiFi", "Piscina", "Spa", "Restaurante", "Gimnasio"],
+        "rating": 5,
+        "precioPorNoche": 250,
+        "disponibilidad": true
+      }
+]

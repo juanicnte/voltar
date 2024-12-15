@@ -1,0 +1,32 @@
+[
+    {
+        "id": 1,
+        "nombre": "La Reserva Virgin Lodge",
+        "ubicacion": {
+          "ciudad": "Iguazu, Misiones",
+          "pais": "Argentina",
+          "direccion": "Av. Kukulcan 123, Zona Hotelera"
+        },
+        "descripcion": "La Reserva Virgin Lodge fue construida cuidadosamente preservando el medio ambiente.",
+        "imagen": "/lareserva-hotel.jpeg",
+        "amenidades": ["WiFi", "Piscina", "Spa", "Restaurante", "Gimnasio"],
+        "rating": 5,
+        "precioPorNoche": 250,
+        "disponibilidad": true
+      },
+      {
+        "id": 2,
+        "nombre": "Hotel Zarek",
+        "ubicacion": {
+          "ciudad": "Posadas, Misiones",
+          "pais": "Argentina",
+          "direccion": "Av. Kukulcan 123, Zona Hotelera"
+        },
+        "descripcion": "El Hotel Zarek combina comodidad y estilo en el corazón de Posadas, respetando su entorno natural.",
+        "imagen": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/609598805.jpg?k=9f013ccbb92a43cd46c69baf3c562607cd7746e74f806eeb030f65a8dd8921db&o=&hp=1",
+        "amenidades": ["WiFi", "Piscina", "Spa", "Restaurante", "Gimnasio"],
+        "rating": 5,
+        "precioPorNoche": 250,
+        "disponibilidad": true
+      }
+]
