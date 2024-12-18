@@ -1,7 +1,7 @@
 import React, { useRef, useState } from 'react';
 import emailjs from 'emailjs-com';
 import CustomToast from './CustomToast';
-import "../css/contact.css"
+import "../css/Contact.css"
 import { Spinner, Center } from '@chakra-ui/react'
 
 const Contact = () => {
