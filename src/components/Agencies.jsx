@@ -5,6 +5,9 @@ import AgenciesData from '../data/agencies.json';
 function Agencies() {
   return (
     <>
+    <h2 className='title-section-options'>
+        Agencias
+      </h2>
       <div className='hotels-main'>
         {/* <CountdownTimer />
         <img style={{ width: "15rem" }} src="/hotel.jpg" alt="" />

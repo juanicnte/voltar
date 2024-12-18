@@ -137,7 +137,7 @@ header.active #btn .btn-content {
 #mobile-nav {
     position: fixed;
     top: 0vh;
-    left: -40rem;
+    left: -101vw;
     width: 90vw;
     height: 100vh;
     /* Inicialmente colapsado */

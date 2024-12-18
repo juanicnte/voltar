@@ -6,7 +6,9 @@ import "../css/Hotels.css"
 function Hotels() {
   return (
     <>
-
+      <h2 className='title-section-options'>
+        Hoteles
+      </h2>
       <div className='hotels-main'>
         {/* <CountdownTimer />
         <img style={{ width: "15rem" }} src="/hotel.jpg" alt="" />

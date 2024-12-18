@@ -123,12 +123,12 @@ const Header = () => {
                             </ul>
                             <div className='linea'></div> */}
                         <ul className='list-idk-nav'>
-                            <li><a>Home</a></li>
-                            <li><a>Nosotros</a></li>
-                            <li><a>Hoteles</a></li>
-                            <li><a>Agencias</a></li>
-                            <li><a>Contacto</a></li>
-                            <li><a>Servicios</a></li>
+                            <li><a href='/'>Home</a></li>
+                            <li><a href='/nosotros'>Nosotros</a></li>
+                            <li><a href='/hoteles'>Hoteles</a></li>
+                            <li><a href='/agencias'>Agencias</a></li>
+                            <li><a href='/contacto'>Contacto</a></li>
+                            {/* <li><a>Servicios</a></li> */}
                         </ul>
                     </article>
 

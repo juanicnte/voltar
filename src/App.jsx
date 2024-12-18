@@ -11,6 +11,8 @@ import Home from './Home'
 import Hotels from './components/Hotels';
 import Agencies from './components/Agencies';
 import OptionsHeader from './components/OptionsHeader';
+import Contact from './components/Contact';
+import AboutUs from './components/AboutUs';
 
 const RouteWithTitle = ({ title, children }) => {
   useEffect(() => {
@@ -65,6 +67,8 @@ function App() {
               <Route path="/" element={<RouteWithTitle title="Home - Voltar"><Home /></RouteWithTitle>} />
               <Route path="/hoteles" element={<RouteWithTitle title="Hoteles - Voltar"><Hotels /></RouteWithTitle>} />
               <Route path="/agencias" element={<RouteWithTitle title="Agencias - Voltar"><Agencies /></RouteWithTitle>} />
+              <Route path="/contacto" element={<RouteWithTitle title="Contacto - Voltar"><Contact /></RouteWithTitle>} />
+              <Route path="/nosotros" element={<RouteWithTitle title="Sobre Nosotros - Voltar"><AboutUs /></RouteWithTitle>} />
             </Routes>
           </main>
             <div className='overlay-active'></div>
