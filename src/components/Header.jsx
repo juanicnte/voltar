@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useContext, useState } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, useLocation } from 'react-router-dom';
 
 // ICONS
 import { FaWhatsapp, FaFacebookF, FaInstagram } from "react-icons/fa";
@@ -11,6 +11,7 @@ import "../css/Header-Footer.css"
 
 const Header = () => {
     // const navigate = useNavigate();
+    const location = useLocation(); // Obtenemos la ruta actual
 
     const headerRef = useRef(null);
     // const bookingRef = useRef(null);
@@ -76,26 +77,29 @@ const Header = () => {
         <>
 
             <header className={`header ${showHeader ? "visible" : "hidden"}`}>
+                <a className="link-img-container" href="/"><img src="/voltar_white.png" className="img-logo" alt="" /></a>
                 <div className='header-colLeft'>
                     <HiBars3BottomLeft onClick={handleMobileNavClick} className="hamburger-button" />
 
                     {/* <svg onClick={handleMobileNavClick} xmlns="http://www.w3.org/2000/svg" fill="#e0e0e0" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-6 hamburger-button">
                         <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 9h16.5m-16.5 6.75h16.5" />
                     </svg> */}
-                    <ul>
-                        <a>Hotel</a>
-                        <a>Apartamentos</a>
+                    <ul className='header-colLeft-laptop'>
+                        {/* <a>Agencias</a>
                         |
-                        <a>Rooftop</a>
+                        <a>Hoteles</a>
+                        | */}
+                        <a href='/contacto'>Contacto</a>
+                        |
+                        <a href='/nosotros'>Nosotros</a>
                     </ul>
                 </div>
-                <a className="link-img-container" href="/"><img src="/voltar_white.png" className="img-logo" alt="" /></a>
-                <div className='header-colRight'>
+                {/* <div className='header-colRight'>
                     <a className='contact-header'>
                         <FaWhatsapp></FaWhatsapp>
                     </a>
                     <button>reservar</button>
-                </div>
+                </div> */}
             </header>
             <nav id="mobile-nav">
                 <section className='container-mobile-nav'>
@@ -123,23 +127,28 @@ const Header = () => {
                             </ul>
                             <div className='linea'></div> */}
                         <ul className='list-idk-nav'>
-                            <li><a href='/'>Home</a></li>
-                            <li><a href='/nosotros'>Nosotros</a></li>
-                            <li><a href='/hoteles'>Hoteles</a></li>
-                            <li><a href='/agencias'>Agencias</a></li>
-                            <li><a href='/contacto'>Contacto</a></li>
+                            <li><a className={`list-mobileNav-option ${location.pathname === "/" ? "active" : ""
+                                }`} href='/'>Home</a></li>
+                            <li><a className={`list-mobileNav-option ${location.pathname === "/nosotros" ? "active" : ""
+                                }`} href='/nosotros'>Nosotros</a></li>
+                            <li><a className={`list-mobileNav-option ${location.pathname === "/hoteles" ? "active" : ""
+                                }`} href='/hoteles'>Hoteles</a></li>
+                            <li><a className={`list-mobileNav-option ${location.pathname === "/agencias" ? "active" : ""
+                                }`} href='/agencias'>Agencias</a></li>
+                            <li><a className={`list-mobileNav-option ${location.pathname === "/contacto" ? "active" : ""
+                                }`} href='/contacto'>Contacto</a></li>
                             {/* <li><a>Servicios</a></li> */}
                         </ul>
                     </article>
 
                     <ul className='list-socials-nav'>
-                        <li><a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
+                        <li><a href="https://www.facebook.com">
                             <FaFacebookF />
                         </a></li>
-                        <li><a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
+                        <li><a href="https://www.instagram.com">
                             <FaInstagram />
                         </a></li>
-                        <li><a href="https://wa.me" target="_blank" rel="noopener noreferrer">
+                        <li><a href='https://wa.me/<543764239352>?text=Hola!%20Me%20gustaría%20saber%20más%20sobre%20tus%20servicios'>
                             <FaWhatsapp />
                         </a></li>
                     </ul>

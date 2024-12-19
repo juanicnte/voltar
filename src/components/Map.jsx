@@ -35,7 +35,7 @@ const Map = () => {
             zoom={6} // Zoom inicial más amplio para mostrar todas las ubicaciones
             // style={{ height: "28rem", width: "95%", margin: "4rem auto" }}
             scrollWheelZoom={false}
-            dragging={false}
+            dragging={true}
         >
             {/* Capa de mapa base */}
             <TileLayer

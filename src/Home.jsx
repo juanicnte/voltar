@@ -26,14 +26,14 @@ function Home() {
         <a className='img-ig-container' href='https://www.instagram.com/p/C0wTfZKqCvJ/?img_index=1'>
           <img src="/img4.png" alt="La reserva Virgin Lodge" />
         </a>
-        <h3 className='img-ig-container'>
+      </section>
+        <h3 className='ig-hashtag'>
           Instagram Feed - #ViajesConPropósito
         </h3>
-        <a href='https://www.instagram.com' className='start-now-action'>
+        <a href='/contacto' className='start-now-action'>
           <FaAngleRight />
           Empezá Ahora
         </a>
-      </section>
       <section className='aboutUs-home'>
         <h2>Transformamos la industria del turismo</h2>
         <p>

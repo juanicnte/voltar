@@ -6,7 +6,7 @@ function Footer() {
         <>
             <footer>
                 <section className="footer-content">
-                    <article className="footer-options">
+                    <article className="footer-img-and-socials">
                         <a href="#" className='footer-image'>
                             <img src="/voltar_white.png" alt="" />
                         </a>
@@ -21,6 +21,8 @@ function Footer() {
                                 <FaWhatsapp />
                             </a></li>
                         </ul>
+                    </article>
+                    <article className="footer-options">
                         <ul className="footer-options-items1">
                             <li>
                                 <a href="/">Home</a>

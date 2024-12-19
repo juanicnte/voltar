@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import { FaArrowUp } from "react-icons/fa";
+import { FaWhatsapp } from "react-icons/fa";
 
 import "./App.css"
 
@@ -26,54 +27,47 @@ const ScrollToTopButton = () => {
   const [showButton, setShowButton] = useState(false);
 
   useEffect(() => {
-    // Función que maneja el evento de scroll
     const handleScroll = () => {
-      setShowButton(window.scrollY > 0);
+      setShowButton(window.scrollY > 50); // Mostrar después de 100px
     };
 
-    // Agrega el listener al evento scroll
     window.addEventListener('scroll', handleScroll);
-
-    // Limpia el listener cuando el componente se desmonta
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
+    return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
   const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
-  return showButton ? (
-    <span onClick={scrollToTop} className='scrollToTop'>
-      {/* <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-6">
-        <path strokeLinecap="round" strokeLinejoin="round" d="m4.5 18.75 7.5-7.5 7.5 7.5" />
-        <path strokeLinecap="round" strokeLinejoin="round" d="m4.5 12.75 7.5-7.5 7.5 7.5" />
-      </svg> */}
-      <FaArrowUp></FaArrowUp>
-    </span>
-  ) : (
-    <p>esperando</p>
+  return (
+    <div
+      className={`scrollToTop ${showButton ? 'visible' : ''}`}>
+      <a href='https://wa.me/<543764239352>?text=Hola!%20Me%20gustaría%20saber%20más%20sobre%20tus%20servicios' className="contact-header">
+        <FaWhatsapp />
+      </a>
+      <FaArrowUp onClick={scrollToTop} />
+    </div>
   );
 };
+
 
 function App() {
   return (
     <Router>
       <Header />
-          <main>
-            <OptionsHeader></OptionsHeader>
-            <Routes>
-              <Route path="/" element={<RouteWithTitle title="Home - Voltar"><Home /></RouteWithTitle>} />
-              <Route path="/hoteles" element={<RouteWithTitle title="Hoteles - Voltar"><Hotels /></RouteWithTitle>} />
-              <Route path="/agencias" element={<RouteWithTitle title="Agencias - Voltar"><Agencies /></RouteWithTitle>} />
-              <Route path="/contacto" element={<RouteWithTitle title="Contacto - Voltar"><Contact /></RouteWithTitle>} />
-              <Route path="/nosotros" element={<RouteWithTitle title="Sobre Nosotros - Voltar"><AboutUs /></RouteWithTitle>} />
-            </Routes>
-          </main>
-            <div className='overlay-active'></div>
-          <Footer />
-          <ScrollToTopButton />
+      <main>
+        <OptionsHeader></OptionsHeader>
+        <Routes>
+          <Route path="/" element={<RouteWithTitle title="Home - Voltar"><Home /></RouteWithTitle>} />
+          <Route path="/hoteles" element={<RouteWithTitle title="Hoteles - Voltar"><Hotels /></RouteWithTitle>} />
+          <Route path="/agencias" element={<RouteWithTitle title="Agencias - Voltar"><Agencies /></RouteWithTitle>} />
+          <Route path="/contacto" element={<RouteWithTitle title="Contacto - Voltar"><Contact /></RouteWithTitle>} />
+          <Route path="/nosotros" element={<RouteWithTitle title="Sobre Nosotros - Voltar"><AboutUs /></RouteWithTitle>} />
+        </Routes>
+      </main>
+      <div className='overlay-active'></div>
+      <Footer />
+      <ScrollToTopButton />
     </Router>
   )
 }

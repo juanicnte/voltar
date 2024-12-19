@@ -6,8 +6,8 @@ mark {
 
 .aboutUs-presentation {
     background-image:
-    linear-gradient(to bottom, rgb(255 255 255 / 0%) 70%, rgb(221 221 221)), 
-    url("/img4.png");
+        linear-gradient(to bottom, rgb(255 255 255 / 0%) 70%, rgb(221 221 221)),
+        url("/img4.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -34,7 +34,7 @@ mark {
 
 .title-aboutUs {
     text-align: center;
-    margin: 0 1rem;
+    margin: 0 2rem;
     font-size: 2.5rem;
     font-family: "EB Garamond", sans-serif;
     font-style: italic;
@@ -45,15 +45,15 @@ mark {
     color: var(--yellow);
 }
 
-.whoIs-and-text p{
+.whoIs-and-text p {
     text-align: center;
-    margin: 0 1rem;
+    margin: 0 2rem;
     color: #353535;
     font-size: 1rem;
     font-weight: 600;
 }
 
-.whoIs-and-text a{
+.whoIs-and-text a {
     padding: 1rem 3rem;
     background-color: var(--yellow);
     color: #fff;
@@ -62,25 +62,97 @@ mark {
     border-radius: 7px;
 }
 
-.aboutUs-colabs{
+.aboutUs-colabs {
     margin-top: 2rem;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.aboutUs-colabs-container h2{
-    margin: 3rem 1rem 0;
+.aboutUs-colabs-title {
+    margin: 3rem 2rem 0;
 }
 
-.aboutUs-colabs p{
+.aboutUs-colabs p {
     color: #353535;
     font-weight: 500;
     margin: 2rem;
 }
 
-.aboutUs-colabs a{
+.aboutUs-colabs a {
     color: var(--yellow);
     text-decoration: underline;
     font-weight: 600;
+}
+
+.aboutUs-colabs img{
+    width: 17rem;
+    height: 17rem;
+    object-fit: cover;
+    opacity: .7;
+}
+
+@media (min-width: 768px) {
+
+    /* about us */
+    .whoIs-and-text p {
+        margin: 0 3rem;
+    }
+
+    .aboutUs-colabs-title {
+        text-align: center;
+        font-size: 1.5rem;
+        margin-top: 2rem;
+    }
+
+    .aboutUs-colabs p {
+        margin: 3rem;
+    }
+}
+
+@media (min-width: 1024px) {
+
+    .whoIs-and-text p{
+        margin: 0 5rem;
+    }
+    .whoIs-and-text a{
+        padding: 1rem 5rem;
+    }
+    .aboutUs-colabs-title{
+        font-size: 2rem;
+    }
+    .aboutUs-colabs p {
+        margin: 3rem 10rem;
+    }
+}
+
+@media (min-width: 1440px) {
+    .title-aboutUs{
+        margin: 0 15rem;
+    }
+    .whoIs-and-text p{
+        margin: 0 15rem;
+    }
+    .aboutUs-colabs p{
+        margin: 3rem 25rem;
+    }
+    .aboutUs-colabs-container{
+        margin: 0 15rem;
+        display: flex;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        gap: 5rem;
+    }
+    .aboutUs-colabs{
+        width: 15rem;
+    }
+    .aboutUs-colabs p{
+        margin: 0;
+        font-size: .7rem;
+        margin-top: 1rem;
+    }
+    .aboutUs-colabs img{
+        width: 100%;
+        height: 15rem;
+    }
 }
