@@ -139,12 +139,13 @@
 @media (min-width: 1440px) {
     .hotels-main{
         margin: 1rem 15rem;
+        padding: 3rem 0;
     }
     .title-section-options{
         margin-left: 15rem;
     }
     .data-item{
-        width: 15rem;
+        width: 16rem;
     }
     .data-item h4{
         font-size: 1rem;

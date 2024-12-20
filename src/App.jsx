@@ -68,7 +68,7 @@ function App() {
       <div className='overlay-active'></div>
       <Footer />
       <ScrollToTopButton />
-    </Router>
+    </Router >
   )
 }
 

@@ -89,7 +89,14 @@ svg {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  filter: drop-shadow(1px 1px 3px #353535);
+  opacity: .9;
+}
+
+.collage-ig img:hover{
+  transition: all 0.5s ease-in-out;
   filter: drop-shadow(2px 3px 3px #353535);
+  opacity: 1;
 }
 
 .img-ig-container {
@@ -107,6 +114,7 @@ svg {
   color: var(--grey-color);
   opacity: 0.8;
   margin: 0 1rem;
+  cursor: default;
 }
 
 .start-now-action {
@@ -285,6 +293,7 @@ svg {
   width: 1.5rem;
   height: 1.5rem;
   color: #fff;
+  cursor: pointer;
 }
 
 .contact-header svg {
